@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <nav class="bg-white border-b border-gray-200">
+        <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+            <div class="flex items-center">
+                <img src="https://st2.zoom.us/static/6.3.22523/image/new/topNav/Zoom_logo.svg" alt="Logo"
+                    class="h-6 mr-3">
+                <!-- <span class="text-xl font-bold text-gray-800">Zoom</span> -->
+            </div>
+            <div class="flex space-x-6 text-gray-500">
+                <a href="#" class="hover:text-gray-800">Sign In</a>
+                <a href="#" class="hover:text-gray-800">Support</a>
+                <a href="#" class="hover:text-gray-800">English</a>
+            </div>
+        </div>
+    </nav>
+    <div class="bg-gray-50 h-screen flex items-center justify-center">
+        <div class="w-full max-w-6xl bg-white rounded-lg shadow-lg overflow-hidden">
+            <!-- Navbar -->
+            <!-- <nav class="bg-white border-b border-gray-200">
+                <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+                    <div class="flex items-center">
+                        <img src="https://via.placeholder.com/40" alt="Logo" class="h-8 w-8 mr-3">
+                        <span class="text-xl font-bold text-gray-800">Zoom</span>
+                    </div>
+                    <div class="flex space-x-6 text-gray-500">
+                        <a href="#" class="hover:text-gray-800">Sign In</a>
+                        <a href="#" class="hover:text-gray-800">Support</a>
+                        <a href="#" class="hover:text-gray-800">English</a>
+                    </div>
+                </div>
+            </nav> -->
+
+            <div class="flex">
+                <div class="w-1/2 p-8 flex flex-col items-center justify-center bg-gray-100">
+                    <img src="https://via.placeholder.com/400" alt="Illustration" class="mb-6 h-32">
+                    <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                        <h2 class="text-2xl font-semibold mb-4">Zoom Workplace</h2>
+                        <p class="text-gray-600 mb-4">An AI-Powered Collaboration Platform</p>
+                        <ul class="space-y-3 text-gray-600 text-left">
+                            <li>• Streamline communications</li>
+                            <li>• Increase employee engagement</li>
+                            <li>• Optimize in-person time</li>
+                            <li>• Improve productivity</li>
+                        </ul>
+                        <button class="mt-6 bg-blue-500 text-white px-4 py-2 rounded-lg">View pricing</button>
+                    </div>
+                </div>
+
+                <div class="w-1/2 p-8 flex flex-col justify-center items-center">
+                    <h2 class="text-3xl font-bold mb-6">Sign In</h2>
+                    <input type="email" placeholder="Email Address"
+                        class="p-3 w-full border border-gray-300 rounded-lg mb-4">
+                    <div class="relative w-full mb-4">
+                        <input type="password" placeholder="Password"
+                            class="p-3 w-full border border-gray-300 rounded-lg">
+                        <svg class="h-5 w-5 absolute right-3 top-3 text-gray-400" fill="none" stroke="currentColor"
+                            stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3 12h18M3 12l6 6M3 12l6-6" />
+                        </svg>
+                    </div>
+                    <div class="flex justify-between items-center w-full mb-6">
+                        <a href="#" class="text-sm text-blue-500">Forgot password?</a>
+                        <a href="#" class="text-sm text-blue-500">Help</a>
+                    </div>
+                    <button class="bg-blue-500 text-white px-4 py-2 rounded-lg mb-6 w-full">Sign In</button>
+                    <p class="text-sm text-gray-500 mb-4">
+                        By signing in, I agree to the Zoom's <a href="#" class="text-blue-500">Privacy Statement</a> and
+                        <a href="#" class="text-blue-500">Terms of Service</a>.
+                    </p>
+                    <div class="flex space-x-4 mb-4">
+                        <button class="flex items-center p-2 bg-gray-100 rounded-lg">
+                            <img src="https://via.placeholder.com/20" alt="SSO" class="mr-2">
+                            SSO
+                        </button>
+                        <button class="flex items-center p-2 bg-gray-100 rounded-lg">
+                            <img src="https://via.placeholder.com/20" alt="Apple" class="mr-2">
+                            Apple
+                        </button>
+                        <button class="flex items-center p-2 bg-gray-100 rounded-lg">
+                            <img src="https://via.placeholder.com/20" alt="Google" class="mr-2">
+                            Google
+                        </button>
+                        <button class="flex items-center p-2 bg-gray-100 rounded-lg">
+                            <img src="https://via.placeholder.com/20" alt="Facebook" class="mr-2">
+                            Facebook
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

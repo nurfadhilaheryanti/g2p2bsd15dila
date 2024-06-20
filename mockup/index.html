@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Call Interface</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-900">
+    <div id="video-call" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4">
+        <!-- Participant Card Example -->
+        <div class="bg-gray-700 rounded-lg p-4 relative">
+            <div class="flex items-center justify-between">
+                <div class="w-16 h-16 rounded-full bg-gray-500 overflow-hidden">
+                    <img src="https://via.placeholder.com/150" alt="Avatar" class="w-full h-full object-cover">
+                </div>
+                <div class="text-white text-sm absolute top-2 right-2">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                        <path
+                            d="M9 12H7v-2h2v2zm6 0h-2v-2h2v2zm2-2h-2v2a1 1 0 01-1 1H6a1 1 0 01-1-1v-2H3v2a3 3 0 003 3h8a3 3 0 003-3v-2zm-6 4H7v-2h2v2zm4 0h-2v-2h2v2zM5 7h2v3H5V7zm12 0v3h-2V7h2zm-4 1a1 1 0 112 0v3h-2V8zm-2 0a1 1 0 112 0v3h-2V8zm-4 0a1 1 0 112 0v3H7V8z">
+                        </path>
+                    </svg>
+                </div>
+            </div>
+            <div class="text-white mt-4 text-center">
+                <p class="text-lg">Participant Name</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const participants = [
+            { name: 'Gustav Christensen', img: 'https://via.placeholder.com/150', mic: 'on' },
+            { name: 'Naomi da Luz', img: 'https://via.placeholder.com/150', mic: 'off' },
+            // Add more participants here...
+        ];
+
+        function renderParticipants(participants) {
+            const container = document.getElementById('video-call');
+            container.innerHTML = ''; // Clear existing participants
+
+            participants.forEach(participant => {
+                const participantCard = document.createElement('div');
+                participantCard.className = 'bg-gray-700 rounded-lg p-4 relative';
+
+                const micIcon = participant.mic === 'on'
+                    ? `<svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M9 12H7v-2h2v2zm6 0h-2v-2h2v2zm2-2h-2v2a1 1 0 01-1 1H6a1 1 0 01-1-1v-2H3v2a3 3 0 003 3h8a3 3 0 003-3v-2zm-6 4H7v-2h2v2zm4 0h-2v-2h2v2zM5 7h2v3H5V7zm12 0v3h-2V7h2zm-4 1a1 1 0 112 0v3h-2V8zm-2 0a1 1 0 112 0v3h-2V8zm-4 0a1 1 0 112 0v3H7V8z"></path></svg>`
+                    : `<svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M9 12H7v-2h2v2zm6 0h-2v-2h2v2zm2-2h-2v2a1 1 0 01-1 1H6a1 1 0 01-1-1v-2H3v2a3 3 0 003 3h8a3 3 0 003-3v-2zm-6 4H7v-2h2v2zm4 0h-2v-2h2v2zM5 7h2v3H5V7zm12 0v3h-2V7h2zm-4 1a1 1 0 112 0v3h-2V8zm-2 0a1 1 0 112 0v3h-2V8zm-4 0a1 1 0 112 0v3H7V8z"></path></svg>`;
+
+                participantCard.innerHTML = `
+          <div class="flex items-center justify-between">
+            <div class="w-16 h-16 rounded-full bg-gray-500 overflow-hidden">
+              <img src="${participant.img}" alt="Avatar" class="w-full h-full object-cover">
+            </div>
+            <div class="text-white text-sm absolute top-2 right-2">
+              ${micIcon}
+            </div>
+          </div>
+          <div class="text-white mt-4 text-center">
+            <p class="text-lg">${participant.name}</p>
+          </div>
+        `;
+
+                container.appendChild(participantCard);
+            });
+        }
+
+        renderParticipants(participants);
+    </script>
+</body>
+
+</html>

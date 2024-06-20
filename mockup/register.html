@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <nav class="bg-white border-b border-gray-200">
+        <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+            <div class="flex items-center">
+                <img src="https://st2.zoom.us/static/6.3.22523/image/new/topNav/Zoom_logo.svg" alt="Logo"
+                    class="h-6 mr-3">
+                <!-- <span class="text-xl font-bold text-gray-800">Zoom</span> -->
+            </div>
+            <div class="flex space-x-6 text-gray-500">
+                <a href="#" class="hover:text-gray-800">Sign In</a>
+                <a href="#" class="hover:text-gray-800">Support</a>
+                <a href="#" class="hover:text-gray-800">English</a>
+            </div>
+        </div>
+    </nav>
+    <div class="bg-gray-50 h-screen flex items-center justify-center">
+        <div class="w-full max-w-6xl bg-white rounded-lg shadow-lg overflow-hidden">
+            <div class="flex">
+                <!-- Left section -->
+                <div class="w-1/2 p-8 flex flex-col items-center justify-center bg-gray-100">
+                    <img class="w-72"
+                        src="https://st1.zoom.us/fe-static/fe-signup-login-active/img/banner-step-2.4b72ef61.png"
+                        alt="Illustration" class="mb-6">
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h2 class="text-2xl font-semibold mb-4">Create your free Basic account</h2>
+                        <ul class="space-y-3 text-gray-600">
+                            <li class="flex items-center">
+                                <svg class="h-5 w-5 text-green-500 mr-2" fill="none" stroke="currentColor"
+                                    stroke-width="2" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                </svg>
+                                Unlimited meetings for up to 40 minutes and 100 participants each
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="h-5 w-5 text-green-500 mr-2" fill="none" stroke="currentColor"
+                                    stroke-width="2" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                </svg>
+                                Automated captions to help make meetings more inclusive
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="h-5 w-5 text-green-500 mr-2" fill="none" stroke="currentColor"
+                                    stroke-width="2" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                </svg>
+                                Secure, HD-quality audio and video
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="h-5 w-5 text-green-500 mr-2" fill="none" stroke="currentColor"
+                                    stroke-width="2" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                </svg>
+                                3 editable whiteboards
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="h-5 w-5 text-green-500 mr-2" fill="none" stroke="currentColor"
+                                    stroke-width="2" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                </svg>
+                                Team Chat for collaboration, file sharing, and more
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="h-5 w-5 text-green-500 mr-2" fill="none" stroke="currentColor"
+                                    stroke-width="2" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                </svg>
+                                Zoom Mail and Calendar in the Zoom app
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="h-5 w-5 text-green-500 mr-2" fill="none" stroke="currentColor"
+                                    stroke-width="2" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                </svg>
+                                Notes for creating and sharing editable documents
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="h-5 w-5 text-green-500 mr-2" fill="none" stroke="currentColor"
+                                    stroke-width="2" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                </svg>
+                                Screen sharing, virtual backgrounds, breakout rooms, and local recording
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="w-1/2 p-8 flex flex-col justify-center items-center">
+                    <h2 class="text-3xl font-bold mb-6">Let's Get Started</h2>
+                    <input type="text" placeholder="Full Name"
+                        class="p-3 w-full border border-gray-300 rounded-lg mb-4" />
+                    <div class="flex w-full gap-5">
+                        <input type="email" placeholder="Email Address"
+                            class="p-3 w-full border border-gray-300 rounded-lg mb-4" />
+                        <input type="number" placeholder="Phone Number"
+                            class="p-3 w-full border border-gray-300 rounded-lg mb-4" />
+                    </div>
+                    <input type="password" placeholder="Password"
+                        class="p-3 w-full border border-gray-300 rounded-lg mb-4" />
+                    <button class="bg-blue-500 text-white px-4 py-2 rounded-lg mb-6 w-full">Continue</button>
+                    <p class="text-sm text-gray-500 mb-4">
+                        By proceeding, I agree to Zoom's <a href="#" class="text-blue-500">Privacy Statement</a> and <a
+                            href="#" class="text-blue-500">Terms of Service</a>.
+                    </p>
+                    <div class="flex space-x-4">
+                        <button class="flex items-center p-2 bg-gray-100 rounded-lg">
+                            <img src="https://via.placeholder.com/20" alt="SSO" class="mr-2">
+                            SSO
+                        </button>
+                        <button class="flex items-center p-2 bg-gray-100 rounded-lg">
+                            <img src="https://via.placeholder.com/20" alt="Apple" class="mr-2">
+                            Apple
+                        </button>
+                        <button class="flex items-center p-2 bg-gray-100 rounded-lg">
+                            <img src="https://via.placeholder.com/20" alt="Google" class="mr-2">
+                            Google
+                        </button>
+                        <button class="flex items-center p-2 bg-gray-100 rounded-lg">
+                            <img src="https://via.placeholder.com/20" alt="Facebook" class="mr-2">
+                            Facebook
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

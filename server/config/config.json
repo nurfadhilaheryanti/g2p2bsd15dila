@@ -1,0 +1,22 @@
+{
+  "development": {
+    "username": "postgres",
+    "password": "postgres",
+    "database": "G2P2BSD15",
+    "host": "127.0.0.1",
+    "dialect": "postgres",
+    "port": 5433
+  },
+  "test": {
+    "username": "postgres",
+    "password": "postgres",
+    "database": "G2P2BSD15_test",
+    "host": "127.0.0.1",
+    "dialect": "postgres",
+    "port": 5433,
+    "logging": false
+  },
+  "production": {
+    "use_env_variable": "DATABASE_URL"
+  }
+}

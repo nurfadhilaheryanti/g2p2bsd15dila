@@ -1,0 +1,16 @@
+[
+  {
+    "email": "user1@gmail.com",
+    "password": "12345",
+    "fullName" : "User 1",
+    "phoneNumber": "+1234567890",
+    "profilePict": "https://i.pinimg.com/564x/a2/ee/4a/a2ee4af3af8b6cc86c961fdc0d8f730d.jpg"
+  },
+  {
+    "email": "user2@gmail.com",
+    "password": "12345",
+    "fullName" : "User 2",
+    "phoneNumber": "+1234567890",
+    "profilePict": "https://i.pinimg.com/564x/43/cc/94/43cc948fbad9cd318f960a4a3b350345.jpg"
+  }
+]
